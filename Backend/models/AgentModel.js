@@ -6,11 +6,7 @@ const AgentSchema = new mongoose.Schema({
         required : true,
         unique : true
     },
-    firstName: {
-        type: String,
-        required: true
-    },
-    lastName: {
+    fullName: {
         type: String,
         required: true
     },
