@@ -21,10 +21,10 @@ app.use(express.json());
 
 app.use(cors());
 
-app.use("/", express.static('../dist/index.html'));
+app.use("/", express.static('./dist/index.html'));
 
 app.get("/", (req, res) => {
-    res.sendFile('./dist/index.html');
+    res.sendFile(__dirname + '/dist/index.html');
   });
 
 app.get("/cities", (req ,res)=>{
