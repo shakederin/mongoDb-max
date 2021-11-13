@@ -8,7 +8,6 @@ const port = process.env.PORT || 8080;
 
 const connectionString = process.env.CONNECTIONSTRING;
 
-
 Mongoose.connect(connectionString)
 .then(()=>{console.log("DB connected")})
 .catch((error)=>{'error connecting to MongoDB:', error.message});
@@ -53,7 +52,6 @@ app.get("/agents", (req,res)=>{
     }
     )
 })
-
 
 app.put("/agent/:id/edit", async (req,res)=>{
     const id = req.params.id;
