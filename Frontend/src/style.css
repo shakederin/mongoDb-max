@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+}
+
+#findCities{
+    font-size: 20px;
+}
+#findAgent{
+    font-size: 40px;
+}
+
+#cityTable{
+    text-align: center;
+    overflow:auto;
+}
+#AgentTable{
+    text-align: center;
+    overflow:auto;
+}
+
+#mainTable{
+    visibility: hidden;
+}
+
+#secondaryTable{
+    visibility: hidden;
+}

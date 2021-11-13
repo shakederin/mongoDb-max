@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Agent Israel</title>
+</head>
+<body>
+    <!-- nav.navbar>section.section>img -->
+    <sction id="findCities">
+        <div>
+            <button id="cityBtn">Show All Cities</button>
+        </div>
+        <table id="mainTable" cellspacing="0" cellpadding="0" border="0" width="325">
+            <tr>
+              <td>
+                 <table cellspacing="0" cellpadding="1" border="1" width="300" >
+                   <tr style="color:white;background-color:grey">
+                      <th>City Name</th>
+                   </tr>
+                 </table>
+              </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="width:320px; height: 350px;; overflow:auto;">
+                        <div style="width:320px; height: 350px;; overflow:auto;">
+                            <table id="cityTable" cellspacing="0" cellpadding="1" border="1" width="300" >
+                            </table>  
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </sction>
+    <section id="findAgent">
+        <div>
+            <input type="text" id="cityInput" placeholder="Enter City">
+            <button id ="searchAgentBtn">Find Agent</button>
+        </div>
+        <table id="secondaryTable" cellspacing="0" cellpadding="0" border="0" width="325">
+            <tr>
+              <td>
+                 <table cellspacing="0" cellpadding="1" border="1" width="300" >
+                   <tr style="color:white;background-color:grey">
+                      <th>Agent Name</th>
+                      <th>Agent Licence Number</th>
+                   </tr>
+                 </table>
+              </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="width:320px; ">
+                        <div style="width:320px; ">
+                            <table id="AgentTable" cellspacing="0" cellpadding="1" border="1" width="300" >
+                            </table>  
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <div>
+            <input id="licenceinput" type="text" placeholder="Enter Agent Name">
+            <input id="NewCityinput" type="text" placeholder="Enter New City">
+            <button id = "updateCityBtn">Update</button>
+        </div>
+        <p id="isUpdate"></p>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- <script src="./index.js"></script> -->
+</body>
+</html>
