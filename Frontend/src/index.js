@@ -13,7 +13,7 @@ const secondaryTable = document.getElementById("secondaryTable")
 const NewCityinput = document.getElementById("NewCityinput")
 const licenceinput = document.getElementById("licenceinput")
 
-const myApi = "http://localhost:8080"
+const myApi = "https://agentsbycities.herokuapp.com"
 
 searchBtn.addEventListener("click", async function(){
     const response = await axios.get(`${myApi}/cities`);
