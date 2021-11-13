@@ -1,3 +1,5 @@
+import "./style.css"
+
 const searchBtn = document.getElementById("cityBtn")
 const cityTable = document.getElementById("cityTable")
 const cityInput = document.getElementById("cityInput")
