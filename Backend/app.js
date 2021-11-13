@@ -24,7 +24,7 @@ app.use(cors());
 app.use("/", express.static('../dist/index.html'));
 
 app.get("/", (req, res) => {
-    res.sendFile(__dirname + '/dist/index.html');
+    res.sendFile('/dist/index.html');
   });
 
 app.get("/cities", (req ,res)=>{
