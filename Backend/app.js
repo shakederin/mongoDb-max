@@ -21,6 +21,8 @@ app.use(express.json());
 
 app.use(cors());
 
+app.use(express.static('../dist/index.html'))
+
 app.get("/cities", (req ,res)=>{
     Agent.find({}).distinct("city").then((cities)=>{
         res.json(cities);
